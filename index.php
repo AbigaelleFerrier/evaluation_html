@@ -7,8 +7,8 @@
             <header>
                 <img src="assets/img/background.jpg?1" alt="photo header">
                 <div>
-                    <p>- 30% CRYOLIPOLYSE Body Sculpt sur toute formule jusqu’à fin octobre</p>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum, cumque libero eligendi quibusdam </p>
+                    <p class="promo">- 30% CRYOLIPOLYSE Body Sculpt sur toute formule jusqu’à fin octobre</p>
+                    <p class="banner">Lorem ipsum dolor sit, amet consectetur</p>
                 </div>
             </header>
             
