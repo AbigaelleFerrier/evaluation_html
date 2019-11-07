@@ -43,28 +43,28 @@
 
     /***************
     Media Query 
-    ****************/
+****************/
 
-        @media only screen and (min-width: $BP1) {
-            .row {
-                width: 90%;
-            }
-            
+    @media only screen and (min-width: $BP1) {
+        .row {
+            width: 90%;
+        }
+        
+    }
+
+    @media only screen and (min-width: $BP2) {
+        .row {
+            width: 65%;
         }
 
-        @media only screen and (min-width: $BP2) {
-            .row {
-                width: 65%;
-            }
-
-            .rowlogo {
-                div.col img {
-                    height: 100px;
-                    width: auto;
-                }
-            }
-
-            .iciExp p {
-                text-align: right;
+        .rowlogo {
+            div.col img {
+                height: 100px;
+                width: auto;
             }
         }
+
+        .iciExp p {
+            text-align: right;
+        }
+    }

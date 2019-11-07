@@ -557,12 +557,12 @@ header p.banner span {
   display: block;
   font-size: 0.7em;
 }
-
 @media only screen and (min-width: 768px) {
   header p.banner span {
     display: inline;
   }
 }
+
 .gallery {
   flex-wrap: wrap;
 }
@@ -654,7 +654,7 @@ img {
 }
 
 /***************
-Media Query 
+    Media Query 
 ****************/
 @media only screen and (min-width: 480px) {
   .row {

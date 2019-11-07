@@ -35,11 +35,11 @@ header {
             font-size: 0.7em;
         }
 
-    }   
-}
-
-@media only screen and (min-width: $BP2) {
-    header p.banner span {
-        display: inline;
-    }
+    } 
+    
+    @media only screen and (min-width: $BP2) {
+        p.banner span {
+            display: inline;
+        }
+    } 
 }
