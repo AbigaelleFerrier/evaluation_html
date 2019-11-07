@@ -1,19 +1,19 @@
-
-// @font-face {
-//     font-family: 'Lato-B';
-//     src: url('../font/LatoB.ttf') format('truetype');
-//     font-weight: normal;
-//     font-style: normal;
-// }
-
-
-h1,h2,h3,h4,h5,h6 {
-    text-align: center;
+@font-face {
+    font-family: 'bertina';
+    src: url('../fonts/bertina.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GothamHTF';
+    src: url('../fonts/GothamHTF.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
-.H4like {
-    font-size: 20px;
-    display: block;
+h1,h2,h3,h4,h5,h6,p {
+    font-family: 'bertina';
+    color: #00465b;
 }
 
 a {
@@ -22,4 +22,8 @@ a {
     &:hover {
         color: $a-color-hover;
     }
+}
+
+.text-center {
+    text-align: center;
 }

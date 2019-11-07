@@ -24,13 +24,22 @@ header {
     p.banner {
         background: rgba(255,255,255,0.5);
         color:rgb(255, 255, 255);
-        font-size: 0.9em;
+        font-size: 1em;
 
         position: relative;
         bottom: 4em;
         padding: 0em 1rem;
 
-    }
+        span {
+            display: block;
+            font-size: 0.7em;
+        }
 
-    
+    }   
+}
+
+@media only screen and (min-width: $BP2) {
+    header p.banner span {
+        display: inline;
+    }
 }

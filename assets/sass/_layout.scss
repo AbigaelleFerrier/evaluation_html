@@ -19,7 +19,6 @@
 
     .col {
         width: 100%;
-        padding: 1em;
     }
 
     .rowlogo {
@@ -29,6 +28,18 @@
         
     }
 
+    .iciExp p {
+        font-family: 'GothamHTF';
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        width: 100%;
+        text-align: left;
+
+        span {
+            font-size: 0.8em;
+            vertical-align: super;
+        }
+    }
 
     /***************
     Media Query 
@@ -36,13 +47,14 @@
 
         @media only screen and (min-width: $BP1) {
             .row {
-                width: 70%;
+                width: 90%;
             }
+            
         }
 
         @media only screen and (min-width: $BP2) {
             .row {
-                width: 70%;
+                width: 65%;
             }
 
             .rowlogo {
@@ -50,5 +62,9 @@
                     height: 100px;
                     width: auto;
                 }
+            }
+
+            .iciExp p {
+                text-align: right;
             }
         }

@@ -481,13 +481,21 @@ template {
 /** ========================   OF  ======================== **/
 /** ======================== RESET ======================== **/
 /** ========================  CSS  ======================== **/
-h1, h2, h3, h4, h5, h6 {
-  text-align: center;
+@font-face {
+  font-family: "bertina";
+  src: url("../fonts/bertina.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
 }
-
-.H4like {
-  font-size: 20px;
-  display: block;
+@font-face {
+  font-family: "GothamHTF";
+  src: url("../fonts/GothamHTF.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+h1, h2, h3, h4, h5, h6, p {
+  font-family: "bertina";
+  color: #00465b;
 }
 
 a {
@@ -497,16 +505,24 @@ a:hover {
   color: #1a8fc4;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .btnRDV {
   background: #fff;
   border: solid #000 1px;
   border-radius: 5px;
   padding: 0.1rem 0.5rem;
+  float: right;
+}
+.btnRDV:hover {
+  background: #d9d9d9;
 }
 
 body {
   background: whitesmoke;
-  color: black;
+  color: #00465b;
 }
 
 header {
@@ -532,20 +548,68 @@ header p.promo {
 header p.banner {
   background: rgba(255, 255, 255, 0.5);
   color: white;
-  font-size: 0.9em;
+  font-size: 1em;
   position: relative;
   bottom: 4em;
   padding: 0em 1rem;
 }
+header p.banner span {
+  display: block;
+  font-size: 0.7em;
+}
 
+@media only screen and (min-width: 768px) {
+  header p.banner span {
+    display: inline;
+  }
+}
+.gallery {
+  flex-wrap: wrap;
+}
+.gallery .col {
+  width: 100%;
+}
 .gallery div img {
   border-radius: 50%;
 }
-
-input:-internal-autofill-selected {
-  background: rgba(0, 0, 0, 0);
+.gallery div p {
+  font-family: "GothamHTF";
+  text-align: center;
+}
+.gallery .d2 {
+  order: 1;
+}
+.gallery .d3 {
+  order: 2;
+}
+.gallery .d1 {
+  order: 3;
 }
 
+/***************
+    Media Query 
+****************/
+@media only screen and (min-width: 480px) {
+  .gallery .col {
+    width: 50%;
+    padding: 2rem;
+  }
+  .gallery .d1 {
+    order: 1;
+  }
+  .gallery .d2 {
+    order: 2;
+  }
+  .gallery .d3 {
+    order: 3;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .gallery .col {
+    width: 33%;
+    padding: 2em;
+  }
+}
 img {
   width: 100%;
 }
@@ -570,7 +634,6 @@ img {
 
 .col {
   width: 100%;
-  padding: 1em;
 }
 
 .rowlogo {
@@ -578,22 +641,38 @@ img {
   align-content: space-around;
 }
 
+.iciExp p {
+  font-family: "GothamHTF";
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  width: 100%;
+  text-align: left;
+}
+.iciExp p span {
+  font-size: 0.8em;
+  vertical-align: super;
+}
+
 /***************
 Media Query 
 ****************/
 @media only screen and (min-width: 480px) {
   .row {
-    width: 70%;
+    width: 90%;
   }
 }
 @media only screen and (min-width: 768px) {
   .row {
-    width: 70%;
+    width: 65%;
   }
 
   .rowlogo div.col img {
     height: 100px;
     width: auto;
+  }
+
+  .iciExp p {
+    text-align: right;
   }
 }
 
