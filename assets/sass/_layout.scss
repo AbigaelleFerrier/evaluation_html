@@ -1,0 +1,54 @@
+/***************
+      Flex 
+****************/
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        margin-bottom : 2rem ;
+    }
+
+    .row {
+        justify-content: center;
+        flex-direction: row;
+        display: flex;
+        width: 95%;
+        margin: 0 auto;
+        align-content: center;
+    }
+
+    .col {
+        width: 100%;
+        padding: 1em;
+    }
+
+    .rowlogo {
+        justify-content: space-around;
+        align-content: space-around;
+
+        
+    }
+
+
+    /***************
+    Media Query 
+    ****************/
+
+        @media only screen and (min-width: $BP1) {
+            .row {
+                width: 70%;
+            }
+        }
+
+        @media only screen and (min-width: $BP2) {
+            .row {
+                width: 70%;
+            }
+
+            .rowlogo {
+                div.col img {
+                    height: 100px;
+                    width: auto;
+                }
+            }
+        }
